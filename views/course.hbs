@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <h2>Update Course</h2>
+        <hr />
+        <form method="POST" action="/courses/update">
+            <input type="hidden" name="courseId" value="{{course.courseId}}">
+            <div class="form-group">
+                <label for="courseCode">Course Code</label>
+                <input class="form-control" id="courseCode" name="courseCode" type="text" value="{{course.courseCode}}" />
+            </div>
+            <div class="form-group">
+                <label for="courseDescription">Course Description</label>
+                <input class="form-control" id="courseDescription" name="courseDescription" type="text" value="{{course.courseDescription}}" />
+            </div>
+            <hr />
+            <input type="submit" class="btn btn-primary" value="Update Course" />
+        </form>
+    </div>
+</div>
